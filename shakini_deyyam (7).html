@@ -1,0 +1,21 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warning!</title>
+    <script>
+        function showPrank() {
+            alert('WARNING! Your phone is hacked!');
+            setTimeout(function() {
+                document.body.innerHTML = '<h1 style="color: red; text-align: center;">Your phone is in danger!</h1><p style="text-align: center;">Click below to fix it.</p><br><button style="display: block; margin: auto; padding: 15px; font-size: 18px;" onclick="fixPrank()">Fix Now</button>';
+            }, 2000);
+        }
+
+        function fixPrank() {
+            document.body.innerHTML = '<h1 style="color: green; text-align: center;">April Fool! Your phone is safe!</h1><p style="text-align: center;">Share this prank with friends 😆</p>';
+        }
+    </script>
+</head>
+<body onload="showPrank()">
+</body>
+</html>
